@@ -2,7 +2,6 @@
 NOME: ERIK SAMUEL VIANA HSU 							RA:10403109
 NOME: THIAGO SHIHAN CARDOSO TOMA						RA:10400764
 */
-
 import java.rmi.Remote;
 import java.rmi.RemoteException;
 
