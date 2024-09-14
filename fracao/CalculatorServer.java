@@ -1,3 +1,10 @@
+/* TURMA: 06G11
+NOME: ERIK SAMUEL VIANA HSU 							RA:10403109
+NOME: THIAGO SHIHAN CARDOSO TOMA						RA:10400764
+*/
+
+
+
 import java.rmi.RemoteException;
 import java.rmi.registry.LocateRegistry;
 import java.rmi.registry.Registry;
