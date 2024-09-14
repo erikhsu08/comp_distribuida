@@ -1,4 +1,8 @@
-public class Fracao{
+import java.io.Serializable;
+
+public class Fracao implements Serializable {
+    private static final long serialVersionUID = 1L;  // versão da classe para fins de serialização
+    
     int numerador;
     int denominador;
 
@@ -9,7 +13,6 @@ public class Fracao{
         }
         this.numerador = numerador;
         this.denominador = denominador;
-
     }
 
     public static int calcularMDC(int a, int b) {
@@ -22,11 +25,12 @@ public class Fracao{
     }
 
     public Fracao simplificar(){
-        int mdc = calcularMDC(numerador,denominador);
+        int mdc = calcularMDC(numerador, denominador);
         int n1 = numerador / mdc;
         int d1 = denominador / mdc;
-        return new Fracao(n1,d1);
+        return new Fracao(n1, d1);
     }
+
     public int getNumerador() {
         return numerador;
     }
