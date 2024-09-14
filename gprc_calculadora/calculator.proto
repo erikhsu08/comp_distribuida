@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+message ComplexNumber {
+    double real = 1;
+    double imaginary = 2;
+}
+
+message OperationRequest {
+    ComplexNumber num1 = 1;
+    ComplexNumber num2 = 2;
+    string operation = 3;  // "add", "subtract", "multiply", "divide"
+}
+
+message ComplexResponse {
+    ComplexNumber result = 1;
+}
+
+service Calculator {
+    rpc Calculate (OperationRequest) returns (ComplexResponse);
+}
