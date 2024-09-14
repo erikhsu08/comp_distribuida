@@ -1,3 +1,9 @@
+/* TURMA: 06G11
+NOME: ERIK SAMUEL VIANA HSU 							RA:10403109
+NOME: THIAGO SHIHAN CARDOSO TOMA						RA:10400764
+*/
+
+
 import java.rmi.registry.LocateRegistry;
 import java.rmi.registry.Registry;
 
@@ -6,7 +12,7 @@ public class CalculatorClient {
     public static void main(String[] args) {
         try {
             // Obter o registro
-            Registry registry = LocateRegistry.getRegistry("localhost");
+            Registry registry = LocateRegistry.getRegistry("IP-HOST-AQUI");
 
             // Procurar o objeto Calculator
             Calculator stub = (Calculator) registry.lookup("Calculator");
